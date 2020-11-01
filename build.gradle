@@ -35,6 +35,7 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j'
 
     implementation 'com.discord4j:discord4j-core:3.1.1'
+    implementation 'org.reflections:reflections:0.9.12'
 
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'

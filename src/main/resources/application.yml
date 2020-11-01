@@ -53,3 +53,6 @@ spring:
 logging:
   level:
     root: info
+
+discord:
+  token: ${DISCORD_TOKEN}
