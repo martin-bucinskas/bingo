@@ -16,6 +16,14 @@ public class CreateTeamMessageHandler implements MessageHandler {
     public void handle(Message message) {
         log.info("[create-team]: Received message: {}", message);
 
+        String id = message.getAuthor().orElse(null).getId().asString();
+        String username = message.getAuthor().orElse(null).getUsername();
+        String discriminator = message.getAuthor().orElse(null).getDiscriminator();
+
+        log.info("ID: {}", id);
+        log.info("Username: {}", username);
+        log.info("Discriminator: {}", discriminator);
+
         Objects.requireNonNull(
             message.getChannel().block()
         ).createMessage("Hello world").block();
