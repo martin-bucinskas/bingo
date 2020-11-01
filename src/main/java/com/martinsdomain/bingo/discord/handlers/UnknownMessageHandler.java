@@ -6,7 +6,7 @@ import discord4j.core.object.entity.Message;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@MessageHandlerRegistration(name = "help")
+@MessageHandlerRegistration(name = "unknown")
 public class UnknownMessageHandler implements MessageHandler {
 
     @Override
